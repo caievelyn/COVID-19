@@ -22,7 +22,15 @@ ui <- fluidPage(
                tabPanel("Interactive Map",
                         mainPanel(
                             leafletOutput("map"))
-                        )
+                        ),
+               tabPanel("Explore the Data",
+                        mainPanel(
+                            plotOutput
+                        )),
+               tabPanel("Texas Trends",
+                        mainPanel(
+                            plotOutput
+                        ))
     )
 )
 
